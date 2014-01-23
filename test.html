@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Calc Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/jQRangeSlider.css" rel="stylesheet">
+    <link href="assets/css/simple-slider.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/calc.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+      <div id="maincontent">
+          <div id="top_mask">
+              <div id="bottom_mask"><!--spacer--></div>
+          </div>
+          <div id="calculator">
+              <h2>the all-new smart electric drive presents:</h2>
+              <div id="intro">
+                  <div class="banner" id="left_banner">
+                      <div class="banner_left"><!--spacer--></div>
+                      <div class="banner_center"><h3>save on gas</h3></div>
+                  </div>  
+                  <h1><span>the fun</span> calculator</h1>
+                  <div class="banner" id="right_banner">
+                      <div class="banner_center"><h3>spend on fun</h3></div>
+                      <div class="banner_right"><!--spacer--></div>
+                  </div>      
+              </div>
+          </div>
+      </div>
+      
+      <h1>Calc Test</h1>
+      <div id="divider"><!--spacer--></div>
+      <div id="float">THIS SHOULD FLOAT AND BE FUN</div>
+      <div id="banner">
+        <div id="banner-left"><!--spacer--></div>
+        <div id="banner-center">YAY SUPER FUN BANNER YAY</div>
+        <div id="banner-right"><!--spacer--></div>
+      </div>
+      <div class="fc_circle_holder">
+        <div id="green1" class="fc_circle fc_circle_green">
+          1st Circle
+          <span class="fc_or">or</span>
+          <div class="fc_share"><a href="#">S</a></div>
+        </div>
+        <div id="green2" class="fc_circle fc_circle_green">
+          2nd Circle
+          <div class="fc_share"><a href="#">S</a></div>
+        </div>
+      </div>
+      <div class="fc_circle_holder">
+        <div id="pink1" class="fc_circle fc_circle_pink">
+          3rd Circle
+          <span class="fc_or">or</span>
+          <div class="fc_share"><a href="#">S</a></div>
+        </div>
+        <div id="pink2" class="fc_circle fc_circle_pink">
+          4th Circle
+          <div class="fc_share"><a href="#">S</a></div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <script src="assets/js/jquery-1.7.1.min.js"></script>
+    <script src="assets/js/jquery-ui-1.8.16.custom.min.js"></script>
+    <!--<script src="assets/js/jquery.mousewheel.min.js"></script>
+    <script src="assets/jQRangeSlider-5.1/jQAllRangeSliders-min.js"></script>-->
+    <script src="assets/js/simple-slider.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+      
+      $(function() {
+        var $sidebar = $("#float"), 
+            $window = $(window),
+            offset = $sidebar.offset(),
+            minHide = 210,
+            maxHide = 3000;
+
+        $sidebar.hide();
+
+        if (offset.top > minHide) $sidebar.show();
+        else $sidebar.hide();
+
+        $window.scroll(function() {
+            if ($window.scrollTop() > minHide) $sidebar.show();
+            else if ($window.scrollTop() > maxHide) $sidebar.hide();
+            else $sidebar.hide();
+        });
+    });
+
+    $('#lightning1').click(function() {
+      $('#lightning1').effect("shake", { 
+        times: 400, 
+        direction: "up" 
+      }, 100);
+      $('#lightning2').effect("pulsate", { times: 400 }, 150);
+      $('#lightning3').effect("bounce", { times: 4000 }, 150);
+    });
+
+    $('#lightning3').click(function() {
+      //$('#lightning1').effect("shake", { times: 40, direction: "up" }, 150);
+      //$('#lightning2').effect("pulsate", { times: 40 }, 150);
+      $('#lightning3').effect("bounce", { times: 400 }, 150);
+    });
+
+
+    </script>
+    <div class="clear"><!--spacer--></div>
+  </body>
+</html>

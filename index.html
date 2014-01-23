@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TWM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <!-- Google Font - Oswald -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/jQRangeSlider.css" rel="stylesheet">
+    <link href="assets/css/simple-slider.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+    	<h1>What are you as a <span>Tall White <b>Male</b>?</span></h1>
+    	<div id="sliders">
+        <div id="col-left">
+          <div class="slider-container gender">
+              <div class="label">Gender</div>
+              <select id="gender" prev-val-id="0">
+                <option value="0" selected="selected">Male</option>
+                <option value="-25">Woman</option>
+                <option value="-35">Transgender</option>
+              </select>
+          </div>
+          <div class="slider-container ethnicity">
+              <div class="label">Ethnicity</div>
+              <select id="ethnicity" prev-val-id="2">
+                <option value="0" selected="selected">White</option>
+                <option value="-10">Asian</option>
+                <option value="-20">Black</option>
+                <option value="-20">Latino</option>
+                <option value="-25">Native American</option>
+              </select>
+          </div>
+          <div class="slider-container height">
+              <div class="label">Height</div>
+              <select id="height" prev-val-id="12">
+                <option value="4">4'</option>
+                <option value="5">5'</option>
+                <option value="6" selected="selected">6'</option>
+                <option value="7">7'</option>
+              </select>
+              <select id="height2" prev-val-id="12">
+                <option value="0">0"</option>
+                <option value="1" selected="selected">1"</option>
+                <option value="2">2"</option>
+                <option value="3">3"</option>
+                <option value="4">4"</option>
+                <option value="5">5"</option>
+                <option value="6">6"</option>
+                <option value="7">7"</option>
+                <option value="8">8"</option>
+                <option value="9">9"</option>
+                <option value="10">10"</option>
+                <option value="11">11"</option>
+              </select>
+              <div class="clear"><!--spacer--></div>
+          </div>
+          <div class="slider-container weight">
+              <div class="label">Weight</div>
+              <select id="weight" prev-val-id="10">
+                <option value="-5" selected="selected">Thin</option>
+                <option value="3">Average</option>
+                <option value="0">Athletic</option>
+                <option value="-5">Overweight</option>
+              </select>
+          </div>
+          <div class="slider-container hair">
+              <div class="label">Hair Color</div>
+              <select id="hair" prev-val-id="4">
+                <option value="0">Blonde</option>
+                <option value="-2">Brown</option>
+                <option value="-5" selected="selected">Black</option>
+                <option value="-7">Red</option>
+                <option value="-7">None</option>
+              </select>
+          </div>
+          <div class="slider-container eyes">
+              <div class="label">Eye Color</div>
+              <select id="eyes" prev-val-id="5">
+                <option value="0">Blue</option>
+                <option value="-2">Brown</option>
+                <option value="-1" selected="selected">Green</option>
+                <option value="-1">Gray</option>
+              </select>
+          </div>
+        </div><!-- END col-left -->
+        <div id="col-right">
+          <div class="slider-container education">
+              <div class="label">Education</div>
+              <select id="education" prev-val-id="3">
+                <option value="-40">Junior High School</option>
+                <option value="-10">High School</option>
+                <option value="0" selected="selected">College</option>
+                <option value="15">Grad School</option>
+              </select>
+          </div>
+          <div class="slider-container income">
+              <div class="label">Income</div>
+              <select id="income" prev-val-id="11">
+                <option value="-15">$0-39K</option>
+                <option value="-5">$40-64K</option>
+                <option value="0" selected="selected">$65-90K</option>
+                <option value="3">$91-150K</option>
+                <option value="8">$151-249K</option>
+                <option value="10">$250-400K</option>
+                <option value="10000">$401+K</option>
+              </select>
+          </div>
+          <div class="slider-container job-title">
+              <div class="label">Job Title</div>
+              <select id="job-title" prev-val-id="8">
+                <option value="10">Most Important</option>
+                <option value="8">Very Important</option>
+                <option value="5" selected="selected">Important</option>
+                <option value="0">Valuable</option>
+                <option value="-5">Average</option>
+                <option value="-10">Replaceable</option>
+              </select>
+          </div>
+          <div class="slider-container investments">
+              <div class="label">Investments</div>
+              <select id="investments" prev-val-id="9">
+                <option value="10">Mucho</option>
+                <option value="5">Moderate</option>
+                <option value="2" selected="selected">Some</option>
+                <option value="0">None</option>
+                <option value="-4">Are you kidding?</option>
+              </select>
+          </div>
+          <div class="slider-container marital-status">
+              <div class="label">Marital Status</div>
+              <select id="marital-status" prev-val-id="6">
+                <option value="-7">Alone</option>
+                <option value="-5">Together</option>
+                <option value="0" selected="selected">Legally Together</option>
+              </select>
+          </div>
+          <div class="slider-container kids">
+              <div class="label">Kids</div>
+              <select id="kids" prev-val-id="7">
+                <option value="0">None</option>
+                <option value="-1">1</option>
+                <option value="-2" selected="selected">2</option>
+                <option value="-3">3</option>
+                <option value="-5">4</option>
+              </select>
+          </div>
+        </div><!-- END col-right -->
+				<div class="clear"><!--spacer--></div>
+			</div><!-- /#sliders -->
+
+			<div id="scale">
+        <div id="slider"><!--spacer--></div>
+        <div id="dude-holder">
+          <h4>Height: <span>6' 2" 71 inches/em</span></h4>
+          <h3>6'2"</h3>
+  				<img src="assets/img/TWM_Plain_thin.png" style="height:74em;" border="0" alt="" id="dude" />
+        </div>
+			</div><!-- /#scale -->
+      <div class="clear"><!--spacer--></div>
+      <div id="buttons">
+        <a href="#" class="button">Save</a>
+        <a href="#" class="button">Share With Friends</a>
+      </div>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <script src="assets/js/jquery-1.7.1.min.js"></script>
+    <script src="assets/js/jquery-ui-1.8.16.custom.min.js"></script>
+    <!--<script src="assets/js/jquery.mousewheel.min.js"></script>
+    <script src="assets/jQRangeSlider-5.1/jQAllRangeSliders-min.js"></script>-->
+    <script src="assets/js/simple-slider.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      //'Global' values that initiate height(s), slider/ruler marker position and ratio(s)
+      var currentHeight = $("#dude").height() / 7;
+      var prevHeight = currentHeight;
+      var prevWidth = $("#scale #dude").width();
+      var markerPosition = currentHeight;
+      var ratios = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100];
+      var prevRatios = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+      //Calls changeDude when a dropdown is changed
+      $("select").change( function () {
+        var multiplyDrop, dropIndex;
+
+        //Height exceptions
+        if ($(this).parent().hasClass('height')) {
+          var selectedFeet = $('#height option:selected').attr('value');
+          var selectedInches = $('#height2 option:selected').attr('value');
+
+          //console.log(selectedFeet);
+
+          //Male rules
+          if ($('.gender option:selected').text() == 'Male') {
+            if (selectedFeet == '7') {
+              multiplyDrop = -(12 + selectedInches);
+            }
+            else if (selectedFeet == '6') {
+              if (selectedInches == '0' || selectedInches == '1' || selectedInches == '2' || selectedInches == '3') {
+                multiplyDrop = 0;
+              }
+              else {
+                multiplyDrop = -(selectedInches - 3);
+              }
+            }
+            else {
+              var selectedHeightInInches = (selectedFeet * 12) + parseInt(selectedInches);
+              //console.log('selectedHeightInInches = ' + selectedHeightInInches);
+              //console.log('selectedInches = ' + selectedInches);
+              multiplyDrop = -(76 - selectedHeightInInches);
+            }
+          }
+
+          //Female or transgender rules
+          else {
+            if (selectedFeet == '7') {
+              multiplyDrop = -(12 + selectedInches);
+            }
+            else if (selectedFeet == '5') {
+              if (selectedInches == '8' || selectedInches == '9' || selectedInches == '10' || selectedInches == '11') {
+                multiplyDrop = 0;
+              }
+              else {
+                var selectedHeightInInches = (selectedFeet * 12) + parseInt(selectedInches);
+                multiplyDrop = -(76 - selectedHeightInInches);
+              }
+            }
+            else if (selectedFeet == '4') {
+              var selectedHeightInInches = (selectedFeet * 12) + parseInt(selectedInches);
+              multiplyDrop = -(76 - selectedHeightInInches);
+            }
+            else {
+              multiplyDrop = -(selectedInches);
+            }
+          }
+        }
+        else {
+          multiplyDrop = $("option:selected", this).attr('value');
+        }
+
+        //console.log('multiplyDrop is ' + multiplyDrop);
+
+        dropIndex = $(this).attr('prev-val-id');
+        ratios[dropIndex] = multiplyDrop;
+        changeDude(ratios[dropIndex], prevRatios[dropIndex]);
+        prevRatios[dropIndex] = multiplyDrop;
+
+      });
+
+      //changeDude function
+      function changeDude(ratio, prevRatio) {
+        //console.log("ratio is " + ratio + " and currentHeight is " + currentHeight);
+        //console.log("ratio is " + ratio + " and prevRatio is " + prevRatio);
+        if (ratio == 0) ratio = prevRatio * (-1);
+        else if (ratio < prevRatio) ratio = (prevRatio - ratio) * (-1);
+        else ratio = ratio - prevRatio;
+
+        prevHeight = currentHeight;
+        currentHeight = Math.round(currentHeight + ratio);
+        markerPosition = currentHeight - 3;
+
+        //Setting max for markerPosition
+        if (markerPosition > 74) markerPosition = 74;
+
+        //Animated height change/slider move
+        $("#scale #dude").animate({height: currentHeight + "em"}, 200);
+        $("#scale #slider").animate({bottom: (markerPosition) + "em"}, 200);
+        
+        var timeoutCheck = setTimeout(function() {
+          $("#scale h3").css({width: $("#scale #dude").width()});
+        }, 250);
+
+        //Displaying changed height
+        var currentFeet = Math.floor(currentHeight / 12);
+        var currentInches = currentHeight % 12;
+        $("#scale h4 span").html(currentFeet + "' " + currentInches + "\" \n" + markerPosition + " inches/em");
+        $("#scale h3").html(currentFeet + "' " + currentInches + "\"");
+      };
+    </script>
+    <div class="clear"><!--spacer--></div>
+  </body>
+</html>
